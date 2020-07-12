@@ -1,0 +1,144 @@
+
+.teachers{
+  background: white;
+  padding-top: 0;
+  .teacher{
+    padding: 16px 16px;
+  }
+  .teachers--container {
+    width: 100%;
+    padding-top: 74px;
+  }
+  .header{
+  box-shadow: 0px 0px 5px #80808069;
+  }
+  .header{
+    padding: 14px 36px 8px 36px;
+    background: #f9f9f9;
+    h5{
+      font-size: 16px;
+    }
+  }
+  
+  .header-menu-item{
+    color: #8f8f8f;
+  
+  }
+  
+  .header-menu-item:hover{
+    color: #8f8f8f;
+    text-decoration: none;
+  }
+  
+  .position-tags {
+    background-color: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5d5d5;
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+  .position-tag {
+    font-size: 12px;
+    background-color: white;
+  }
+  .tag-selected {
+    background-color: #4a4747;
+    border-color: #4a4747;
+    color: white;
+  }
+  
+  .dropdown-toggle::after {
+    display: none;
+  }
+  
+  .rotate-focus {
+    line-height: 22px;
+    transition-duration: 0.2s;
+  }
+  .dropdown-toggle[aria-expanded="true"] .rotate-focus {
+    transform: rotate(-180deg);
+  }
+  .result{
+  height: 23px;
+  line-height: 25px;
+  font-size: 18px;
+  }
+  .custom-dropdown-menu {
+    width: 200px;
+    padding: 10px 20px;
+  }
+  .custom-btn-link{
+    width: auto;
+    padding: 0px;
+    color: #b2b2b2;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .custom-btn-link:hover {
+    text-decoration: none;
+    color: #4a4747;
+  }
+  .custom-btn-link:focus {
+    text-decoration: none;
+  }
+  
+  .categories-body{
+  padding: 12px 50px;
+  margin-top: 14px;
+  }
+  
+  .categories-body h4{
+  font-style: oblique;
+  }
+  
+ 
+  
+}
+
+@media (max-width: 990px){
+  .teachers .header-menu-item{
+    margin-right: 10px!important;
+  }
+  
+}
+@media (max-width: 800px){
+  .filter-option-box{
+    flex-direction: column;
+    align-items: flex-start!important;
+    .mt-mb{
+      margin-top: 20px;
+    }
+  }
+  .teachers{
+    .select-option .sort-options .selected-option {
+      margin-left: 16px;
+      margin-top: 0;
+    }
+  }
+}
+@media (max-width: 500px){
+  .teachers .header{
+    padding: 10px;
+  }
+  .teachers .header-menu-item{
+    margin-right: 0px!important;
+  }
+  .teachers .header h5{
+    font-size: 13px;
+  }
+  .teachers .categories-body{
+    padding: 12px 20px;
+  }
+  .filter-option-box{
+    flex-direction: column;
+    align-items: flex-start!important;
+    .mt-mb{
+      margin-top: 20px;
+    }
+  }
+  .teachers .select-option .sort-options .selected-option{
+    padding: 4px;
+  }
+}

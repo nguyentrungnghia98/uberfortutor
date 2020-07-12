@@ -1,0 +1,41 @@
+.notmatch{
+  .page-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 90vh;
+    background: #fafafa;
+    padding-top: 104px;
+    padding-bottom: 80px;
+  }
+  .mid-content-wrapper {
+    width: 86%;
+    max-width: 960px;
+    margin: auto;
+}
+.number-text {
+  font-size: 200px;
+  line-height: 150px;
+  color: #58a0ef;
+}
+.sub-text {
+  margin-top: 28px;
+  font-size: 18px;
+  color: #757575;
+}
+.btn-homepage {
+  margin-top: 16px;
+  display: block;
+  cursor: pointer;
+  background-color: #58a0ef;
+  color: #fff;
+  padding: 10px 32px;
+  border-radius: 50px;
+  font-weight: 300;
+  i{
+    margin-right: 8px;
+  }
+}
+}

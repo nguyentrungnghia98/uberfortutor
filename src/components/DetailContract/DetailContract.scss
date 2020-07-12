@@ -1,0 +1,63 @@
+.contract-detail-container{
+  padding: 0 10%;
+  .custom-card .custom-card--header .teacher-info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+  input:disabled {
+    cursor: none;
+  }
+
+  
+}
+
+
+@media (max-width: 992){
+  .actions-contract{
+    padding: 0 20px;
+  }
+}
+@media (max-width: 550px){
+  .contract-detail-container{
+    .review-container{
+      flex-direction: column;
+    }
+    .custom-card .custom-card--header .teacher-info h5{
+      font-size: 16px;
+    }
+    .custom-card .custom-card--header{
+      padding: 0 10px;
+    }
+    .custom-card .custom-card--header .teacher-info span{
+      font-size: 13px;
+    }
+    .custom-card .custom-card--header img{
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+}
+
+@media (max-width: 400px){
+  .contract-detail-container{
+
+    .custom-card .custom-card--header .teacher-info h5{
+      font-size: 13px;
+    }
+    .custom-card .custom-card--header{
+      padding: 0 10px;
+    }
+    .custom-card .custom-card--header .teacher-info span{
+      font-size: 11px;
+    }
+    .custom-card .custom-card--header img{
+      width: 40px;
+      height: 40px;
+    }
+    h4{
+      font-size: 20px;
+    }
+  }
+}

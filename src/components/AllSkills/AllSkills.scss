@@ -1,0 +1,17 @@
+.skills-container{
+  padding: 0 10%;
+  img{
+    width: 100%;
+  }
+  .skills-box{
+    padding:30px;
+  }
+  a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    div{
+      margin-top: 12px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.select-option{
+  .btn-toggle-custom {
+    padding: 6px 12px;
+      font-size: 16px;
+    border: 1px solid #cacaca;
+    }
+    
+    .dropdown{
+    cursor: pointer;
+    font-size: 17px;
+    }
+  .sort-options{
+    display: flex;
+    align-items: center;
+    .selected-option{
+      margin-left: 16px;
+    }
+  }
+  .custom-input{
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid #c1c1c1;
+    margin: 8px 20px;
+    padding: 4px 8px;
+  }
+}

@@ -1,0 +1,393 @@
+.setting{
+  display: flex;
+  justify-content: center;
+  padding: 0 12%;
+    .btn {
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      border-width: 0px;
+      border-style: initial;
+      border-color: initial;
+      border-image: initial;
+      padding: 10px;
+      outline: none;
+      transition: all 0.25s linear 0s;
+    }
+    .btn--close {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      background: white;
+      color: #797979;
+      border-radius: 50% !important;
+      padding: 4px 10px;
+      font-size: 20px;
+      font-weight: 400;
+      div {
+        margin-top: -2px;
+      }
+      &:hover {
+        background: whitesmoke;
+      }
+    }
+    .actions {
+      margin-top: 12px;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      .btn__edit {
+        padding: 8px 20px;
+        width: 150px;
+        &:disabled {
+          background: #b9f2ff !important;
+        }
+      }
+    }
+    .MuiButtonBase-root{
+      .MuiTab-wrapper{
+        flex-direction: row!important;
+        justify-content: start!important;
+        font-weight: bold;
+        font-family: Segoe UI;
+        text-transform: none;
+        font-size: 16px;
+        i{
+          width: 44px;
+          text-align: center;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .MuiTab-labelIcon{
+      min-height: 52px!important;
+      max-width: 280px!important;
+    }
+    button.Mui-selected{
+      background: white;
+      color: #00bedc;
+      opacity: 1;
+      box-shadow: 0px 0px 8px #949494;
+      border-left: 4px solid #00bedc;
+      .MuiTab-wrapper{
+      margin-left: -8px;
+      }
+    }
+    .PrivateTabIndicator-vertical-32{
+      display: none;
+    }
+}
+
+
+.image-spinner {
+  position: absolute !important;
+  z-index: 998;
+  margin: 0;
+  top: 42%;
+}
+.opacity-spinner {
+  opacity: 0.3;
+  filter: blur(3px);
+}
+.image-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  padding-bottom: 180px;
+  position: relative;
+  overflow: hidden;
+  max-width: 180px;
+  max-height: 180px;
+  display: flex;
+  justify-content: center;
+  &:hover {
+    .uploadOverlay {
+      transition: all 150ms ease;
+      opacity: 1;
+      z-index: 101;
+      cursor: pointer;
+      .uploadImage {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+      }
+    }
+  }
+  .uploadOverlay {
+    box-sizing: border-box;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    border-radius: 100%;
+    background-color: rgba(88, 160, 240, 0.58);
+    opacity: 0;
+    i {
+      font-size: 40px;
+      color: white;
+      padding: 50%;
+      height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > * {
+        align-self: center;
+      }
+    }
+  }
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 100;
+    max-width: 180px;
+    max-height: 180px;
+  }
+}
+
+.setting-form{
+  padding: 25px 30px;
+  color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  h4{
+    font-size: 25px;
+  }
+  .text-label{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-left: 4px;
+    margin-top: 26px;
+  }
+  .MuiFormControl-root{
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+  }
+
+  .btn-primary{
+    padding: 8px 20px;
+    margin-top: 20px;
+  }
+  .actions{
+    .btn-primary{
+      width: 110px;
+    }
+  }
+  
+}
+.react-tags {
+  position: relative;
+  padding: 6px 0 0 6px;
+  border: 1px solid #D1D1D1;
+  border-radius: 1px;
+
+  /* shared font styles */
+  font-size: 1em;
+  line-height: 1.2;
+
+  /* clicking anywhere will focus the input */
+  cursor: text;
+}
+
+.react-tags.is-focused {
+  border-color: #B1B1B1;
+}
+
+.react-tags__selected {
+  display: inline;
+}
+
+.react-tags__selected-tag {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 6px 6px 0;
+  padding: 6px 8px;
+  border: 1px solid #D1D1D1;
+  border-radius: 2px;
+  background: #F1F1F1;
+
+  /* match the font styles */
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.react-tags__selected-tag:after {
+  content: '\2715';
+  color: #AAA;
+  margin-left: 8px;
+}
+
+.react-tags__selected-tag:hover,
+.react-tags__selected-tag:focus {
+  border-color: #B1B1B1;
+}
+
+.react-tags__search {
+  display: inline-block;
+
+  /* match tag layout */
+  padding: 7px 2px;
+  margin-bottom: 6px;
+
+  /* prevent autoresize overflowing the container */
+  max-width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+
+  .react-tags__search {
+    /* this will become the offsetParent for suggestions */
+    position: relative;
+  }
+
+}
+
+.react-tags__search-input {
+  /* prevent autoresize overflowing the container */
+  max-width: 100%;
+
+  /* remove styles and layout from this element */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+
+  /* match the font styles */
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.react-tags__search-input::-ms-clear {
+  display: none;
+}
+
+.react-tags__suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+
+  .react-tags__suggestions {
+    width: 240px;
+  }
+
+}
+
+.react-tags__suggestions ul {
+  margin: 4px -1px;
+  padding: 0;
+  list-style: none;
+  background: white;
+  border: 1px solid #D1D1D1;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.react-tags__suggestions li {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 8px;
+}
+
+.react-tags__suggestions li mark {
+  text-decoration: underline;
+  background: none;
+  font-weight: 600;
+}
+
+.react-tags__suggestions li:hover {
+  cursor: pointer;
+  background: #eee;
+}
+
+.react-tags__suggestions li.is-active {
+  background: #b7cfe0;
+}
+
+.react-tags__suggestions li.is-disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.react-tags__search-input{
+  input{
+    min-width: 129px;
+    padding: 4px 12px;
+  }
+}
+
+.salary-form{
+  .salary-field{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-bottom: 1px solid gray;
+    &:last-child{
+      border-bottom: none;
+    }
+    .salary-info{
+      p{
+        font-weight: bold;
+    margin-bottom: 2px;
+      }
+      span{
+        color: gray;
+        font-size: 14px;
+      }
+    }
+    .salary-price{
+      display: flex;
+      align-items: center;
+      .MuiFormControl-root, div {
+        width: 100px;
+        margin-right: 20px;
+        text-align: right;
+        .MuiOutlinedInput-input{
+          padding: 12px;
+        }
+        input{
+          text-align: right;
+        }
+      }
+    }
+  }
+  
+}
+.no-border{
+  border-bottom: none;
+}
+
+
+@media (max-width: 989px){
+  .setting{
+    padding: 0 4%;
+    .MuiButtonBase-root .MuiTab-wrapper{
+      font-size: 14px;
+    }
+  }
+  
+}
+
+@media (max-width: 650px){
+  .setting{
+    >div:first-child{
+      flex-direction: column;
+      >div{
+        width: 100%!important;
+      }
+      div:first-child{
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

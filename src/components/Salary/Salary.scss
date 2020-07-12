@@ -1,0 +1,94 @@
+.salary-container{
+  margin: 0 auto;
+  max-width: 700px;
+  width: 90vw;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0 4px 8px #c1c1c1;
+  .MuiAppBar-colorDefault{
+    background: white;
+    box-shadow: none;
+  }
+  .statistic-box{
+    background: white;
+    padding: 0 50px;
+  }
+  .MuiTabs-flexContainer{
+    justify-content: space-between;
+  }
+  .MuiButtonBase-root{
+    border-bottom: 1px solid #d4d4d4;
+    width: 25%;
+    background: whitesmoke;
+    outline: none;
+  }
+  .MuiTabs-indicator{
+    display: none;
+  }
+  .Mui-selected{
+    background: white;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: 3px solid #03c7ff;
+    .statistic-title{
+      span{
+        color: #03c7ff;
+      }
+      h5{
+        color:#292929;
+      }
+    }
+  }
+  .statistic-title{
+    display: flex;
+    flex-direction: column;
+    text-transform: none;
+    align-items: flex-start;
+    span{
+      font-size: 14px;
+      margin-bottom: 8px;
+      color:#525252;
+    }
+    h5{
+      font-size: 24px;
+      color:#525252;
+    }
+  }
+  .filter-date{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    .pick-date{
+      display: flex;
+      align-items: center;
+      div{
+        width: 110px;
+        input{
+          text-align: center;
+        }
+      }
+      span{
+        margin: 6px 12px 0;
+      }
+    }
+  }
+} 
+
+@media (max-width: 650px){
+  .salary-container .statistic-box{
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 500px){
+  .filter-date{
+    flex-direction: column;
+  }
+  .salary-container .statistic-title span{
+    font-size: 12px;
+    text-align: left;
+  }
+  .salary-container .statistic-title h5{
+    font-size: 16px;
+  }
+}

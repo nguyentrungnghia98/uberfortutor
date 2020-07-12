@@ -1,0 +1,171 @@
+.teacher-info-container{
+  padding-left: 10%;
+  padding-right: 10%;
+  
+  .teacher{
+    padding: 0;
+    margin-bottom: 50px;
+    
+    .teacher-container{
+      padding: 40px 36px;
+      .teacher-info{
+        justify-content: space-between;
+        padding-bottom: 10px;
+        .info-right{
+          margin-left: 30px;
+          .name{
+            font-size: 23px;
+            color: #212121;
+          }
+          .job{
+            font-size: 15px;
+          }
+        }
+        
+      }
+    }
+    
+  }
+  .actions{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:  0 50px 0 50px;
+    button{
+      width: 100%;
+      margin-bottom: 16px;
+      height: 42px;
+      font-size: 18px;
+      box-shadow: -1px 1px 8px #b5b5b5;
+      i{
+        color: tomato;
+      }
+    }
+  }
+  .review{
+    display: flex;
+    flex-direction: column;
+    .section{
+      display: flex;
+      flex-direction: column;
+      b{
+        font-size: 20px;
+      }
+      .divide-primary{
+        background: #00c6ff;
+        width: 130px;
+        height: 4px;
+      }
+      span{
+        font-size: 14px;
+      }
+    }
+  }
+  .teacher--title{
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  .introduction{
+    width: 90%;
+  }
+  .statistic{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 16%;
+      margin-right: 30px;
+      p{
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 0;
+      }
+      span{
+        margin-top: 8px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .history{
+    .history-container{
+      background: white;
+    box-shadow: 0 4px 12px #c7c7c7;
+    }
+    .history--header{
+      height: 90px;
+      padding: 30px;
+      background: whitesmoke;
+      border-bottom: 1px solid gray;
+      display: flex;
+      justify-content: space-between;
+      
+      button{
+        min-width: 105px;
+        background: white;
+        box-shadow: 0 2px 8px #bfbfbf;
+        border: none;
+      }
+    }
+    .history--body{
+      padding: 30px;
+      .review{
+        margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #cccccc;
+        .review-info{
+          height: 40px;
+        }
+        .review-content{
+          display: flex;
+      flex-direction: column;
+        }
+      }
+      .star-ratings{
+        margin-bottom: 8px;
+      }
+      .price{
+        text-align: right;
+        font-weight: bold;
+      }
+      .rating{
+        font-weight: bold;
+      }
+    }
+    
+  }
+}
+
+@media (max-width: 650px){
+  .teacher-info-container{
+    padding-left:4%;
+    padding-right:4%;
+  }
+  .teacher-info-container .statistic div{
+    flex: 0 0 30%;
+    max-width: 30%;
+
+    margin-left: 8px;
+    margin-right: 0;
+    p{
+      font-size: 16px;
+    }
+    span{
+      font-size: 13px;
+    }
+  }
+  .history--header  h5{
+    font-size: 16px;
+  }
+  .teacher-info-container .history .history--body .review .review-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .teacher-info-container .history .history--body .price{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
