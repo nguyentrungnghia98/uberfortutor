@@ -92,7 +92,7 @@ const Root = (props) => {
         
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Teachers />
           </Route>
           <Route exact path="/cat" render={() => <Redirect to="/cat/all" />}></Route>
           <Route exact path="/search/:search">
