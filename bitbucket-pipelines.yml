@@ -1,7 +1,7 @@
 image: node:10.15.3
 pipelines:
   branches:
-    master:
+    develop:
       - step:
           name: Test App
           caches:
@@ -11,23 +11,53 @@ pipelines:
             - rm -rf node_modules
             - npm install
             - npm run test
-      
+
       - step:
-           name: Create artifact
-           script: 
-             - git archive --format=tar.gz master -o application.tar.gz 
-           artifacts: 
-           - application.tar.gz
-       
+          name: Create artifact
+          script:
+            - git archive --format=tar.gz master -o application.tar.gz
+          artifacts:
+            - application.tar.gz
+
       - step:
-           name: Deploy to heroku
-           deployment: production
-           caches:
-             - node
-           script:
-             - pipe: atlassian/heroku-deploy:1.1.4
-               variables:
-                 HEROKU_API_KEY: $HEROKU_API_KEY
-                 HEROKU_APP_NAME: $HEROKU_APP_NAME
-                 ZIP_FILE: "application.tar.gz"
-                 WAIT: 'true'
+          name: Deploy to heroku
+          deployment: staging
+          caches:
+            - node
+          script:
+            - pipe: atlassian/heroku-deploy:1.1.4
+              variables:
+                HEROKU_API_KEY: $HEROKU_API_KEY
+                HEROKU_APP_NAME: $HEROKU_STAGING #http://uberfortutor-react-staging.herokuapp.com/
+                ZIP_FILE: "application.tar.gz"
+                WAIT: "true"
+    master:
+      - step:
+          name: Deploy App
+          caches:
+            - node
+          script:
+            - rm -rf package-lock.json
+            - rm -rf node_modules
+            - npm install
+            - npm run test
+
+      - step:
+          name: Create artifact
+          script:
+            - git archive --format=tar.gz master -o application.tar.gz
+          artifacts:
+            - application.tar.gz
+
+      - step:
+          name: Deploy to heroku
+          deployment: production
+          caches:
+            - node
+          script:
+            - pipe: atlassian/heroku-deploy:1.1.4
+              variables:
+                HEROKU_API_KEY: $HEROKU_API_KEY
+                HEROKU_APP_NAME: $HEROKU_PROD #http://uberfortutor-react.herokuapp.com/
+                ZIP_FILE: "application.tar.gz"
+                WAIT: "true"
