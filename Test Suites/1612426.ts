@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>1612426</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>e1375ea2-0ecb-486f-a770-102003d17679</testSuiteGuid>
+   <testCaseLink>
+      <guid>e4c46e4c-37aa-43bf-b1fd-162826f6b938</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 014 Create team (invalid datas)</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c4db48e9-a1f8-4afd-bdd7-64f20679bb73</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 008 Change team description (invalid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0d7bbcbd-aeba-46cd-9817-5c9f71a2cc71</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>07a73324-67b3-45ef-a07e-0e05df2537ff</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 003 Change fullname (valid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4532b359-9e1a-405e-ae7f-cd7b3f1ff0b7</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9ead6d76-16cc-48c0-8c30-bb705db638a6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 010 Change team name (invalid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5c75a8e6-4ff0-4594-a0cf-96709252d8a6</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7e1aa27a-9d15-45de-b438-86f43a0221a0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 004 Change nickname (invalid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8c3fe8cd-e602-4caf-89eb-e55a63b49bcb</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7eb493f5-5ad0-40a6-8602-96f498b0edb1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 011 Change team name (valid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b9c8f195-c980-4211-a653-e86b30e428fa</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c3c9e68d-7188-4751-9e04-f82adecf4371</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 005 Change nickname (valid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f3d81cc6-626e-4512-bf97-a33275469ac2</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>96c2dc0c-6eaa-4f89-9f7b-e7d5097d686f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 009 Change team description (valid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d500f535-7a49-4890-b301-5889694f8669</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>91b5db11-7400-457f-8bb4-0666094583c3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 006 Change position (invalid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>28f7b13c-4e3d-4ca6-b479-18848563a7f8</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>315bbe29-1137-45f8-b7dd-7574960024b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 015 Create team (valid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>06a740b2-2bd6-4332-9ac8-51423b189fd1</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d9821170-3216-4241-af76-ecc8ade66b20</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 013 Chatbox - kiểm tra gửi nhiều tin nhắn (special datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c58a80c6-b7b0-460e-8c1b-a27c9294e832</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>72f0742b-c3d3-4157-97e7-b44906321458</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 001 Change allow domain (invalid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>50fbcddb-2ea8-4e75-ae91-c7a30cc5f8d9</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d12e0fa7-9317-4fbd-8263-45fee1ca32c6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 012 Chatbox - kiểm tra gửi nhiều tin nhắn (normal datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0c39aed4-77b0-4fa7-9ecc-77d55cfb2f5a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4c7885db-f847-471a-9a9a-0a8fec99e59e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 002 Change allow domain (valid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>87af1b0e-0a92-4030-84ab-07567cf925e6</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d5c13538-ad76-46d6-b76d-4f61b79003e9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612426/04 - 007 Change position (valid datas)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d9be4947-d29f-4304-9f73-d2cfc4e3cab7</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
