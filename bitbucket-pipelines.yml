@@ -4,7 +4,6 @@ pipelines:
     develop:
       - step:
           name: Test App
-          image: katalonstudio/katalon
           caches:
             - node
           script:
@@ -12,8 +11,12 @@ pipelines:
             - rm -rf node_modules
             - npm install
             - npm run test
+      - step: 
+          name: Katalon Test
+          image: katalonstudio/katalon
+          script:
             - katalonc.sh -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/1612425"
-
+            
       - step:
           name: Create artifact
           script:
