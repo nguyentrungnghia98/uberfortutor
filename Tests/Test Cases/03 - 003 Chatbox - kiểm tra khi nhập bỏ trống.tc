@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>03 - 003 Chatbox - kiểm tra khi nhập bỏ trống</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f296bb5-e5ae-480d-8ce7-008008e34b11</testCaseGuid>
+   <variable>
+      <defaultValue>'http://localhost:8065/test/channels/off-topic'</defaultValue>
+      <description></description>
+      <id>f8f26c6d-b14c-481d-af9d-5f3698946a26</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>644c1ed5-e40d-4103-b8ed-b7da11b853fa</id>
+      <masked>false</masked>
+      <name>content</name>
+   </variable>
+</TestCaseEntity>

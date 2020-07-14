@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>03 - 001 Chatbox - kiểm tra có clear ô nhập sau khi enter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>820fd083-4ae2-4004-ac08-13ea49f6a251</testCaseGuid>
+   <variable>
+      <defaultValue>'http://localhost:8065/test/channels/off-topic'</defaultValue>
+      <description></description>
+      <id>fa8b5d04-9736-406b-8096-57f43f9fcd09</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variable>
+   <variable>
+      <defaultValue>'test'</defaultValue>
+      <description></description>
+      <id>e0e95095-911e-425e-8bf3-f0b9b1c75da8</id>
+      <masked>false</masked>
+      <name>content</name>
+   </variable>
+</TestCaseEntity>
