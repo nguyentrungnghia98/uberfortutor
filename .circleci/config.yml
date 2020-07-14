@@ -11,12 +11,12 @@ jobs:
             git push --force https://heroku:6bc01e71-16ed-4cfc-8fa2-5fe6fd34e007@git.heroku.com/uberfortutor-react-staging.git master
   test:
     docker:
-      - image: katalonstudio/katalon
+      - image: katalonstudio/katalon #7.5.5
     steps:
       - checkout
       - run:
           name: Execute Katalon Studio
-          command: cd Tests && katalonc.sh -statusDelay=30 -projectPath=/root/project -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="staging" -browserType="Chrome (headless)" -apiKey=7b33cee6-8c93-4fc5-b94e-1ba666ec502d
+          command: cd Tests && katalonc.sh -statusDelay=30 -projectPath=/root/project/Tests -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -browserType="Chrome" -apiKey=7b33cee6-8c93-4fc5-b94e-1ba666ec502d
   # deploy:
   #   docker:
   #     - image: buildpack-deps:trusty
