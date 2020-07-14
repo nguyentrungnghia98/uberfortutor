@@ -9,59 +9,11 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>44478562-31b3-45ad-9c79-f9003bc6553c</testSuiteGuid>
+   <testSuiteGuid>2e1ed9e9-63eb-44c1-ad9a-804d92cfb7e9</testSuiteGuid>
    <testCaseLink>
-      <guid>b5a1051f-e6eb-4dec-9c14-ca09706b8d27</guid>
+      <guid>216ea90f-d133-42e2-ba52-5a6969a848ad</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/03 - 003 Chatbox - kiểm tra khi nhập bỏ trống</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>f8f26c6d-b14c-481d-af9d-5f3698946a26</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>644c1ed5-e40d-4103-b8ed-b7da11b853fa</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>6a11042b-c62b-4088-b440-7fb4369068bb</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/03 - 002 Chatbox - kiểm tra có hiển thị tin nhắn mới nhập</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>420b6f0b-e42c-4352-9e8d-74512b6143a3</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>aaaf78a1-e499-4b08-820c-865d2e3d1b08</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>95d16412-8206-4b00-b7f8-83c08dbb24bd</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/03 - 001 Chatbox - kiểm tra có clear ô nhập sau khi enter</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>fa8b5d04-9736-406b-8096-57f43f9fcd09</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e0e95095-911e-425e-8bf3-f0b9b1c75da8</variableId>
-      </variableLink>
+      <testCaseId>Test Cases/Test1</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

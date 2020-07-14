@@ -42,7 +42,7 @@ pipelines:
             - docker
           script:
             # Run Test
-            - cd Tests && katalonc.sh -statusDelay=30 -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="staging" -browserType="Chrome (headless)" -apiKey=b3d75ee9-26a1-4a98-b105-54dccf13382c
+            - cd Tests && katalonc.sh -statusDelay=30 -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="staging" -browserType="Chrome (headless)" -apiKey=7b33cee6-8c93-4fc5-b94e-1ba666ec502d
           artifacts: # defining the artifacts .
             - report/**
     master:

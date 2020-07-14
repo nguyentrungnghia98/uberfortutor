@@ -14,31 +14,10 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import org.openqa.selenium.By as By
-import org.openqa.selenium.WebDriver as WebDriver
-import org.openqa.selenium.WebElement as WebElement
-import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('1612419/03 - 006 Login success (reusable)'), [('url') : 'http://localhost:8065/login', ('username') : 'ntn641998'
-        , ('password') : 'Hcmushcmus@123'], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.navigateToUrl(url)
+WebUI.navigateToUrl('https://uberfortutor-react.herokuapp.com')
 
-WebUI.setText(findTestObject('Dashboard/DIRECT MESSAGES/Chatbox/Input'), content)
-
-WebUI.sendKeys(findTestObject('Dashboard/DIRECT MESSAGES/Chatbox/Input'), Keys.chord(Keys.ENTER))
-
-inputContent = WebUI.getText(findTestObject('Dashboard/DIRECT MESSAGES/Chatbox/Input'))
-
-switch (inputContent) {
-    case content:
-        throw new Exception('Input did not clear')
-    case '':
-        break
-    default:
-        throw new Exception('Some thing wrong')
-}
-
-WebUI.closeBrowser()
+WebUI.verifyEqual(1, 1)
 
