@@ -17,25 +17,36 @@ jobs:
       - run:
           name: Execute Katalon Studio
           command: cd Tests && katalonc.sh -statusDelay=30 -projectPath=/root/project/Tests -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -browserType="Chrome" -apiKey=7b33cee6-8c93-4fc5-b94e-1ba666ec502d
-  # deploy:
-  #   docker:
-  #     - image: buildpack-deps:trusty
+  deploy:
+    docker:
+      - image: buildpack-deps:trusty
       
-  #   steps:
-  #     - checkout
-  #     - run:
-  #         name: Deploy to Production Server
-  #         command: |
-  #           git push --force https://heroku:6bc01e71-16ed-4cfc-8fa2-5fe6fd34e007@git.heroku.com/uberfortutor-react.git master
+    steps:
+      - checkout
+      - run:
+          name: Deploy to Production Server
+          command: |
+            git push --force https://heroku:6bc01e71-16ed-4cfc-8fa2-5fe6fd34e007@git.heroku.com/uberfortutor-react.git master
 workflows:
-  version: 2
-  build_and_test:
+  version: 2.1
+  build_develop:    
     jobs:
-      # - build
-      - test
-      # - test:
-      #     requires:
-      #       - build
-      # - deploy:
-      #     requires:
-      #       - test
+      - build:
+          filters:
+            branches:
+              only:
+                - develop
+      - test:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - develop
+  build_master:    
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
