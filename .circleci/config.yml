@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: Execute Katalon Studio
-          command: cd Tests && katalonc.sh -statusDelay=30 -projectPath=/tmp/project -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="staging" -browserType="Chrome (headless)" -apiKey=7b33cee6-8c93-4fc5-b94e-1ba666ec502d
+          command: cd Tests && katalonc.sh -statusDelay=30 -projectPath=/root/project/Tests -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="staging" -browserType="Chrome (headless)" -apiKey=7b33cee6-8c93-4fc5-b94e-1ba666ec502d
   # deploy:
   #   docker:
   #     - image: buildpack-deps:trusty
@@ -31,10 +31,11 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - build
-      - test:
-          requires:
-            - build
+      # - build
+      - test
+      # - test:
+      #     requires:
+      #       - build
       # - deploy:
       #     requires:
       #       - test
