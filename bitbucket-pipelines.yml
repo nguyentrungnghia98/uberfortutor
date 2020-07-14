@@ -1,9 +1,9 @@
-image: node:10.15.3
 pipelines:
   branches:
     develop:
       - step:
           name: Test App
+          image: node:10.15.3
           caches:
             - node
           script:
@@ -12,8 +12,10 @@ pipelines:
             - npm install
             - npm run test
 
+
       - step:
           name: Create artifact
+          image: node:10.15.3
           script:
             - git archive --format=tar.gz develop -o application.tar.gz
           artifacts:
@@ -21,6 +23,7 @@ pipelines:
 
       - step:
           name: Deploy to heroku
+          image: node:10.15.3
           deployment: staging
           caches:
             - node
@@ -31,9 +34,21 @@ pipelines:
                 HEROKU_APP_NAME: $HEROKU_STAGING #http://uberfortutor-react-staging.herokuapp.com/
                 ZIP_FILE: "application.tar.gz"
                 WAIT: "true"
+      
+      - step:
+          name: Run test Katalon
+          image: katalonstudio/katalon
+          services:
+            - docker
+          script:
+            # Run Test
+            - cd Tests && katalonc.sh -statusDelay=30 -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="staging" -browserType="Chrome (headless)" -apiKey=b3d75ee9-26a1-4a98-b105-54dccf13382c
+          artifacts: # defining the artifacts .
+            - report/**
     master:
       - step:
           name: Deploy App
+          image: node:10.15.3
           caches:
             - node
           script:
@@ -44,6 +59,7 @@ pipelines:
 
       - step:
           name: Create artifact
+          image: node:10.15.3
           script:
             - git archive --format=tar.gz master -o application.tar.gz
           artifacts:
@@ -51,6 +67,7 @@ pipelines:
 
       - step:
           name: Deploy to heroku
+          image: node:10.15.3
           deployment: production
           caches:
             - node
