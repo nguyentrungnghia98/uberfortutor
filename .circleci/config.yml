@@ -11,22 +11,22 @@ jobs:
             git push --force https://heroku:6bc01e71-16ed-4cfc-8fa2-5fe6fd34e007@git.heroku.com/uberfortutor-react-staging.git master
   test:
     docker:
-      - image: katalonstudio/katalon:latest
+      - image: katalonstudio/katalon
     steps:
       - checkout
       - run:
           name: Execute Katalon Studio
-          command: cd Tests && katalonc.sh -statusDelay=30 -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="staging" -browserType="Chrome (headless)" -apiKey=7b33cee6-8c93-4fc5-b94e-1ba666ec502d
-  deploy:
-    docker:
-      - image: buildpack-deps:trusty
+          command: cd Tests && katalonc.sh -statusDelay=30 -projectPath=/ -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="staging" -browserType="Chrome (headless)" -apiKey=7b33cee6-8c93-4fc5-b94e-1ba666ec502d
+  # deploy:
+  #   docker:
+  #     - image: buildpack-deps:trusty
       
-    steps:
-      - checkout
-      - run:
-          name: Deploy to Production Server
-          command: |
-            git push --force https://heroku:6bc01e71-16ed-4cfc-8fa2-5fe6fd34e007@git.heroku.com/uberfortutor-react.git master
+  #   steps:
+  #     - checkout
+  #     - run:
+  #         name: Deploy to Production Server
+  #         command: |
+  #           git push --force https://heroku:6bc01e71-16ed-4cfc-8fa2-5fe6fd34e007@git.heroku.com/uberfortutor-react.git master
 workflows:
   version: 2
   build_and_test:
@@ -35,6 +35,6 @@ workflows:
       - test:
           requires:
             - build
-      - deploy:
-          requires:
-            - test
+      # - deploy:
+      #     requires:
+      #       - test
