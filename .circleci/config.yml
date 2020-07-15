@@ -52,7 +52,8 @@ jobs:
           command: |
             git push --force https://heroku:6bc01e71-16ed-4cfc-8fa2-5fe6fd34e007@git.heroku.com/uberfortutor-react.git master
       - slack/status:
-        fail_only: false
+          fail_only: false
+
 workflows:
   version: 2.1
   build_develop:    
