@@ -11,63 +11,63 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>2e1ed9e9-63eb-44c1-ad9a-804d92cfb7e9</testSuiteGuid>
    <testCaseLink>
-      <guid>dab6ffce-4bc2-4552-adf6-5ef0985dbec3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/1612421/Tìm kiếm với tên GV chưa có</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>eb8b320d-76ff-4a81-a1f9-6e1004cac139</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/1612421/Tìm kiếm với tên GV đã có</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>866e0d6a-4f90-4ae9-8a06-bd3e1fc1d85d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/1612421/Tìm kiếm với tên môn học đã có</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>bb183d84-2586-4381-9a5c-680902403294</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/1612421/Xem danh sách hợp đồng đang học (có hợp đồng)</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>4f199f68-16ee-45c9-9c91-5272a0ef4e85</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/1612421/Xem danh sách hợp đồng đã từ chối (danh sách rỗng)</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a1daf7c3-730a-4e85-a89e-c7b5748a83e3</guid>
+      <guid>6313ceba-0df4-4b56-8d4f-09334890dddb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/1612425/Test Case 1</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6d397c76-5f1c-48a5-8b4a-f3f52317085b</guid>
+      <guid>e46497e7-c961-47a3-9b8b-010398d13681</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/1612425/Test Case 2</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>5f8d142b-897a-4ca3-88bd-f55d5c97c955</guid>
+      <guid>52c6f01d-17b7-4ea0-975a-24aa60d3069e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/1612425/Test Case 3</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>001e59b7-f474-4b67-b08d-c983b6e0d3e3</guid>
+      <guid>8f450e9a-db16-4f94-8e33-9151bb0665ef</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/1612425/Test Case 4</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>fd1b9b1c-8850-49fb-9a4e-84f8acf745c3</guid>
+      <guid>c2d3aeb8-e5ae-4cc4-858d-ad5d769700f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/1612425/Test Case 5</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>54fd3286-8c4f-40b7-92ed-eff2c9408936</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612421/Test case 10</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8014f373-8c1e-47b0-8014-2bbbd20206e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612421/Test case 6</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>49675cee-614a-4098-b6b1-6710c960a233</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612421/Test case 7</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f737d545-901a-49ff-9bc6-61e16de439c7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612421/Test case 8</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>db5cdb1a-da85-4a53-9a17-37659b932609</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/1612421/Test case 9</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Test trở về trang chủ</description>
-   <name>Test Case 6</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>8d1cc1c6-831e-4099-b329-a0c95486262e</testCaseGuid>
-</TestCaseEntity>
