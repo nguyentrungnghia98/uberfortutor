@@ -1,5 +1,16 @@
 version: 2.1
 jobs:
+  ui-test:
+    docker:
+      - image: circleci/node:12
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run: npm test
   build:
     docker:
       - image: buildpack-deps:trusty
@@ -9,7 +20,7 @@ jobs:
           name: Deploy to Staging Server
           command: |
             git push --force https://heroku:6bc01e71-16ed-4cfc-8fa2-5fe6fd34e007@git.heroku.com/uberfortutor-react-staging.git master
-  test:
+  test-with-katalon:
     docker:
       - image: katalonstudio/katalon #7.5.5
     steps:
@@ -31,18 +42,25 @@ workflows:
   version: 2.1
   build_develop:    
     jobs:
-      - build:
+      - ui-test:
           filters:
             branches:
               only:
                 - develop
-      - test:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - develop
+      # - build:
+      #     requires:
+      #       - ui-test
+      #     filters:
+      #       branches:
+      #         only:
+      #           - develop
+      # - test-with-katalon:
+      #     requires:
+      #       - build
+      #     filters:
+      #       branches:
+      #         only:
+      #           - develop
   build_master:    
     jobs:
       - deploy:
