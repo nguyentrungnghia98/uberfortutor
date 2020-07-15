@@ -1,8 +1,8 @@
 version: 2.1
+orbs:
+  node: circleci/node@13.8.0
 jobs:
   ui-test:
-    docker:
-      - image: circleci/node:12
     executor:
       name: node/default
     steps:
