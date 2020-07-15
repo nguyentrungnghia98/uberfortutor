@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test snapShot render component NoMatch 1`] = `
+<div
+  className="notmatch"
+>
+  <div
+    className="page-wrapper mid-content-wrapper"
+  >
+    <div
+      className="number-text"
+    >
+       404 
+    </div>
+    <div
+      className="sub-text"
+    >
+       Xin lỗi, không tìm thấy đường dẫn. 
+    </div>
+    <a
+      className="btn btn-homepage"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="fas fa-home"
+      />
+      Về trang chủ
+    </a>
+  </div>
+</div>
+`;

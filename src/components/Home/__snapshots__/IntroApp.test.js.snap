@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test snapShot render component IntroApp 1`] = `
+<div
+  className="home--card"
+>
+  <div
+    className="intro-app"
+  >
+    <h4>
+      Về chúng tôi
+    </h4>
+    <p>
+      <b>
+        Tìm kiếm gia sư, lớp học thêm
+      </b>
+       khiến bạn trở nên quá mệt mỏi, hay bạn muốn 
+      <b>
+        trở thành gia sư
+      </b>
+       kiếm thêm thu nhập. Hãy để 
+      <b>
+        Uber for tutor 
+      </b>
+      giải quyết giúp bạn
+    </p>
+    <button
+      className="btn btn-primary"
+      type="button"
+    >
+      Xem thêm
+    </button>
+  </div>
+</div>
+`;

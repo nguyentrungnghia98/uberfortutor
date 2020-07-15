@@ -1,5 +1,23 @@
 version: 2.1
+
+orbs:
+  node: circleci/node@1.1.6
+  slack: circleci/slack@3.4.2
+
 jobs:
+  ui-test:
+    executor:
+      name: node/default
+      tag: '13.8.0'
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run: npm test
+      - slack/status:
+          fail_only: true
+            
   build:
     docker:
       - image: buildpack-deps:trusty
@@ -9,7 +27,10 @@ jobs:
           name: Deploy to Staging Server
           command: |
             git push --force https://heroku:6bc01e71-16ed-4cfc-8fa2-5fe6fd34e007@git.heroku.com/uberfortutor-react-staging.git master
-  test:
+      - slack/status:
+          fail_only: true
+
+  test-with-katalon:
     docker:
       - image: katalonstudio/katalon #7.5.5
     steps:
@@ -17,6 +38,9 @@ jobs:
       - run:
           name: Execute Katalon Studio
           command: cd Tests && katalonc.sh -statusDelay=30 -projectPath=/root/project/Tests -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -browserType="Chrome" -apiKey=7b33cee6-8c93-4fc5-b94e-1ba666ec502d
+      - slack/status:
+          fail_only: false
+
   deploy:
     docker:
       - image: buildpack-deps:trusty
@@ -27,16 +51,26 @@ jobs:
           name: Deploy to Production Server
           command: |
             git push --force https://heroku:6bc01e71-16ed-4cfc-8fa2-5fe6fd34e007@git.heroku.com/uberfortutor-react.git master
+      - slack/status:
+          fail_only: false
+
 workflows:
   version: 2.1
   build_develop:    
     jobs:
-      - build:
+      - ui-test:
           filters:
             branches:
               only:
                 - develop
-      - test:
+      - build:
+          requires:
+            - ui-test
+          filters:
+            branches:
+              only:
+                - develop
+      - test-with-katalon:
           requires:
             - build
           filters:
