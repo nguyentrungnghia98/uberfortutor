@@ -69,4 +69,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### `test CI/CD with new Feature`
 
-Test CI/CD
+demo sửa code và commit để chạy CI/CD
