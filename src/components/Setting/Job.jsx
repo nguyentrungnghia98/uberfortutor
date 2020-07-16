@@ -90,7 +90,7 @@ const Job = (props) => {
     <form onSubmit={handleSubmit} className="setting-form">
       <h4>Nghề nghiệp</h4>
       <label className="text-label">
-        Công việc hiện tại của bạn là gì?
+        Hiện tại bạn đang làm công việc gì?
             </label>
 
       <FormControl variant="outlined">
