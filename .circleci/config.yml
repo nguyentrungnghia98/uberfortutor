@@ -5,7 +5,7 @@ orbs:
   slack: circleci/slack@3.4.2
 
 jobs:
-  ui-test:
+  unit-test:
     executor:
       name: node/default
     steps:
@@ -57,7 +57,7 @@ workflows:
   version: 2.1
   build_develop:    
     jobs:
-      - ui-test:
+      - unit-test:
           filters:
             branches:
               only:
