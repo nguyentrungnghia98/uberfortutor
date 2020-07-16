@@ -33,7 +33,7 @@ const Salary = (props) => {
       console.log('data', data, response)
 
       setLoadSaveDone(true);
-      toast.success('Cập nhật thành công');
+      toast.success('Cập nhật thành công!!!');
     } catch (error) {
       console.log({ error });
       setLoadSaveDone(true);
