@@ -7,7 +7,7 @@ import ListMessage from './ListMessage';
 import './Messages.scss';
 
 const arrOption = [
-  { text: 'Tất cả tin nhắn', code: 'all' },
+  { text: 'Toàn bộ tin nhắn', code: 'all' },
   { text: 'Tin nhắn chưa đọc', code: 'unread' },
   { text: 'Tin nhắn mới nhất', code: 'newest' },
   { text: 'Tin nhắn cũ nhất', code: 'oldest' },
