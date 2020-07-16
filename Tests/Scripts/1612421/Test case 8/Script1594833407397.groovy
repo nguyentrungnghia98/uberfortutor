@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://uberfortutor-react.herokuapp.com/')
+WebUI.navigateToUrl('http://uberfortutor-react-staging.herokuapp.com/')
 
 WebUI.click(findTestObject('Object Repository/Page_Gia S/b_Xem tt c k nng'))
 
@@ -33,6 +33,5 @@ WebUI.click(findTestObject('Object Repository/Page_Gia S/div_Nguyn Vn CGio vin t
 //WebUI.click(findTestObject('Object Repository/Page_Gia S/div_Nguyn Ngc HGio vin ton250000hQun Th c T_9eac4e'))
 //
 //WebUI.click(findTestObject('Object Repository/Page_Gia S/div_Trung NghaGio vin vn hc50000hsai Chi Mi_dabfa5'))
-
 WebUI.closeBrowser()
 

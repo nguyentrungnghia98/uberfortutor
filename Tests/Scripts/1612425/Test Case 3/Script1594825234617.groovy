@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://uberfortutor-react.herokuapp.com/cat/V%E1%BA%ADt%20l%C3%AD/5dea10171c9d440000af1a7c')
+WebUI.navigateToUrl('http://uberfortutor-react-staging.herokuapp.com/cat/V%E1%BA%ADt%20l%C3%AD/5dea10171c9d440000af1a7c')
 
 WebUI.click(findTestObject('1612425_Page_Gia S/button_Tn A-Z'))
 
