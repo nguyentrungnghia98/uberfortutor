@@ -57,21 +57,21 @@ workflows:
   version: 2.1
   build_develop:    
     jobs:
-      - ui-test:
-          filters:
-            branches:
-              only:
-                - develop
-      - build:
-          requires:
-            - ui-test
-          filters:
-            branches:
-              only:
-                - develop
+      # - ui-test:
+      #     filters:
+      #       branches:
+      #         only:
+      #           - develop
+      # - build:
+      #     requires:
+      #       - ui-test
+      #     filters:
+      #       branches:
+      #         only:
+      #           - develop
       - test-with-katalon:
-          requires:
-            - build
+          # requires:
+          #   - build
           filters:
             branches:
               only:
