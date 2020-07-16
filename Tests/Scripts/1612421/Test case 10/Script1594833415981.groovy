@@ -18,15 +18,27 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://uberfortutor-react.herokuapp.com/')
+WebUI.navigateToUrl('http://uberfortutor-react-staging.herokuapp.com/')
 
-WebUI.click(findTestObject('Page_Gia S/b_Xem tt c k nng'))
+WebUI.click(findTestObject('Object Repository/Page_Gia S/b_Xem tt c k nng'))
 
-WebUI.setText(findTestObject('Page_Gia S/input_Tr thnh gia s_search'), 'test')
+WebUI.click(findTestObject('Object Repository/Page_Gia S/div_ng nhp'))
 
-WebUI.sendKeys(findTestObject('Page_Gia S/input_Tr thnh gia s_search'), Keys.chord(Keys.ENTER))
+WebUI.setText(findTestObject('Object Repository/Page_Gia S/input__email'), 'nyz15368@zzrgg.com')
 
-WebUI.click(findTestObject('Object Repository/Page_Gia S/h5_Rng'))
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Gia S/input__password'), 'zoM5qQG1dRNoNFvhmlgp8A==')
+
+WebUI.click(findTestObject('Object Repository/Page_Gia S/button_ng nhp'))
+
+WebUI.waitForPageLoad(5)
+
+WebUI.click(findTestObject('Object Repository/Page_Gia S/span_Hp ng hc'))
+
+WebUI.click(findTestObject('Object Repository/Page_Gia S/button_Bt k'))
+
+WebUI.click(findTestObject('Object Repository/Page_Gia S/button_ t chi'))
+
+WebUI.click(findTestObject('Object Repository/Page_Gia S/i_Danh sch hp ng rng'))
 
 WebUI.closeBrowser()
 

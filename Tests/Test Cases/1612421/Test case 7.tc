@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Tìm kiếm với tên GV đã có</name>
+   <name>Test case 7</name>
    <tag>Tìm kiếm với tên GV đã có</tag>
    <comment></comment>
    <testCaseGuid>2a2ac35f-899f-44a5-b207-7448513dde4f</testCaseGuid>

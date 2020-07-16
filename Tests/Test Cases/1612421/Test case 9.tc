@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Xem danh sách hợp đồng đang học (có hợp đồng)</name>
+   <name>Test case 9</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d609b815-296b-4ec8-8b90-8b971b2cf60d</testCaseGuid>

@@ -18,21 +18,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://uberfortutor-react.herokuapp.com/')
+WebUI.navigateToUrl('http://uberfortutor-react-staging.herokuapp.com/')
 
-WebUI.click(findTestObject('Object Repository/Page_Gia S/b_Xem tt c k nng'))
+WebUI.click(findTestObject('Page_Gia S/b_Xem tt c k nng'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Gia S/input_Tr thnh gia s_search'), 'tiếng anh')
+WebUI.setText(findTestObject('Page_Gia S/input_Tr thnh gia s_search'), 'test')
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_Gia S/input_Tr thnh gia s_search'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_Gia S/input_Tr thnh gia s_search'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Page_Gia S/div_Nguyn Vn CGio vin ting Anh80000h NngTin_1a7be8'))
-
-//WebUI.click(findTestObject('Object Repository/Page_Gia S/div_L Vn Fkim ton vin300000h NngTing AnhThn_d04cdd'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_Gia S/div_Nguyn Ngc HGio vin ton250000hQun Th c T_9eac4e'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_Gia S/div_Trung NghaGio vin vn hc50000hsai Chi Mi_dabfa5'))
+WebUI.click(findTestObject('Object Repository/Page_Gia S/h5_Rng'))
 
 WebUI.closeBrowser()
 
